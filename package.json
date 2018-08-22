@@ -1,21 +1,21 @@
 {
-  "name": "jury.online",
+  "name": "Torpedo Project",
   "version": "1.0.0",
-  "description": "Jury.online landing markup.",
+  "description": "Investment note markup",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ned4ded/jury.online.git"
+    "url": "git+https://github.com/ned4ded/torpedo-project"
   },
   "author": "Bazhenov Eugen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ned4ded/jury.online/issues"
+    "url": "https://github.com/ned4ded/torpedo-project/issues"
   },
-  "homepage": "https://github.com/ned4ded/jury.online#readme",
+  "homepage": "",
   "dependencies": {
     "autoprefixer": "^7.1.6",
     "babel-core": "^6.26.0",
