@@ -13,22 +13,6 @@ body {
   margin: 0;
 }
 
-.text {
-  margin: 0;
-
-  letter-spacing: 0.05px;
-
-  color: white;
-
-  font-family: $ff-sans;
-  font-size: 20px;
-  line-height: 100%;
-
-  &--dark {
-    color: black;
-  }
-}
-
 .heading {
   margin: 0;
 
@@ -39,6 +23,19 @@ body {
   font-weight: bold;
   line-height: 1.41;
 }
+
+.text {
+  margin: 0;
+
+  letter-spacing: 0.05px;
+
+  color: white;
+
+  font-family: $ff-sans;
+  font-size: 20px;
+  line-height: 100%;
+}
+
 
 /* End of A base styles */
 

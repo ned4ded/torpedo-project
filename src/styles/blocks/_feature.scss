@@ -1,0 +1,50 @@
+.feature {
+  width: 100%;
+  display: flex;
+  padding: 0 40px 35px;
+  flex-flow: column nowrap;
+  margin: 0;
+  text-align: center;
+  height: 100%;
+
+  &__heading {
+    font-family: $ff-sans;
+    display: block;
+    color: $dark-100;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 9px;
+  }
+
+  &__line {
+    font-family: $ff-sans;
+    display: block;
+    color: $dark-100;
+    font-size: 16px;
+    line-height: 1.88;
+  }
+
+  &__icon {
+    display: block;
+    height: 165px;
+    margin-bottom: 30px;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    &--validation {
+      background-image: url('../assets/imgs/features-icon-validation.png');
+      background-position: calc(50% - 5px) bottom;
+
+    }
+
+    &--meeting {
+      background-image: url('../assets/imgs/features-icon-meeting.png');
+      background-position: center bottom;
+    }
+
+    &--responsibility {
+      background-image: url('../assets/imgs/features-icon-responsibility.png');
+      background-position: center bottom;
+    }
+  }
+}

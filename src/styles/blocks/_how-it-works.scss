@@ -1,0 +1,59 @@
+.how-it-works {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-top: 112px;
+  padding-bottom: 110px;
+
+  background-color: $dark-100;
+
+  &__heading {
+    margin-top: 9px;
+  }
+
+  & .ordered-list__counter:before {
+    left: -62px;
+    top: -7px;
+
+    background-color: #3c434d;
+  }
+
+  &__img {
+    position: absolute;
+    top: 96px;
+    right: 104px;
+
+    width: 705px;
+    height: 579px;
+
+    background-image: url('../assets/imgs/how-it-works-img.jpg');
+    background-size: 705px 579px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 10px;
+    list-style: none;
+
+    &-item {
+      &:not(:last-of-type) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &-heading {
+      font-size: 20px;
+      line-height: 100%;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
