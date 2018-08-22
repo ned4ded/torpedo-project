@@ -121,7 +121,9 @@ body {
   width: 540px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 32px 65px 50px; }
+  padding: 32px 65px 50px;
+  -webkit-box-shadow: 0 0 32.8px 16.2px rgba(38, 46, 57, 0.14);
+          box-shadow: 0 0 32.8px 16.2px rgba(38, 46, 57, 0.14); }
   .form__paragraph {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
@@ -340,7 +342,7 @@ body {
     height: 100%;
     content: '';
     opacity: .4;
-    background-image: url("../assets/imgs/bg-jumbotron.png");
+    background-image: url("../assets/imgs/jumbo-bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 1440px; }
@@ -518,3 +520,62 @@ body {
     .features__list li {
       background-color: #fff;
       width: 31.666%; }
+
+.footer {
+  position: relative;
+  z-index: 1;
+  padding-top: 120px;
+  padding-bottom: 77px;
+  background-color: #262e39; }
+  .footer:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .25;
+    background-image: url("../assets/imgs/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1440px; }
+  .footer__lang-switch .lang-switch__item:first-of-type {
+    padding-left: 0; }
+  .footer__form .form__heading {
+    margin-bottom: 45px; }
+  .footer__paragraph {
+    margin: 0;
+    padding-left: 97px;
+    padding-top: 22px; }
+    .footer__paragraph-line {
+      display: block;
+      font-size: 16px;
+      line-height: 36px; }
+    .footer__paragraph-icon {
+      display: block;
+      height: 67px;
+      width: 51px;
+      background-image: url("../assets/imgs/footer-icon-shield.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-bottom: 25px; }
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 103px; }
+  .footer__copyright {
+    font-size: 16px; }
