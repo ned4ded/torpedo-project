@@ -484,7 +484,7 @@ body {
 
 .features {
   padding-top: 127px;
-  padding-bottom: 166px;
+  padding-bottom: 216px;
   background-color: #f1f6f9;
   position: relative; }
   .features:before {
@@ -524,7 +524,7 @@ body {
 .footer {
   position: relative;
   z-index: 1;
-  padding-top: 120px;
+  padding-top: 69px;
   padding-bottom: 77px;
   background-color: #262e39; }
   .footer:before {
@@ -539,7 +539,7 @@ body {
     opacity: .25;
     background-image: url("../assets/imgs/footer-bg.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     background-size: 1440px; }
   .footer__lang-switch .lang-switch__item:first-of-type {
     padding-left: 0; }
