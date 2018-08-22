@@ -1,0 +1,16 @@
+.main-info {
+  position: relative;
+  z-index: 2;
+  background-color: #f1f6f9;
+  padding-top: 100px;
+  padding-bottom: 165px;
+  background-image: url('../assets/imgs/bg-main-info.png');
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-size: 401px 27px;
+
+  &__form {
+    margin-top: -220px;
+    margin-bottom: 113px;
+  }
+}

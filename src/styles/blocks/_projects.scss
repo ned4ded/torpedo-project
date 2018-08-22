@@ -1,0 +1,24 @@
+.projects {
+
+  &__row {
+    &--one {
+      min-height: 260px;
+    }
+  }
+
+  & .ordered-list__counter:before {
+    top: 16px;
+    left: 29px;
+  }
+
+  &__paragraph {
+    max-width: 420px;
+
+    color: $dark-100;
+
+    font-family: $ff-circe;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.41;
+  }
+}

@@ -1,0 +1,31 @@
+.input-group {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  box-shadow: 0 0 32.8px 16.2px rgba(38, 46, 57, 0.14);
+
+  &__input {
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: $ff-sans;
+
+    &:focus::placeholder {
+      font-size: 0;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      color: $dark-100;
+    }
+
+    &--comment {
+      min-height: 101px;
+    }
+  }
+}

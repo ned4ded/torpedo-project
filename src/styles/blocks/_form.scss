@@ -1,0 +1,64 @@
+.form {
+  display: block;
+  margin: auto;
+  background-color: $dark-100;
+  width: 540px;
+  box-sizing: border-box;
+  padding: 32px 65px 50px;
+
+  &__paragraph {
+    font-size: 14px;
+    color: rgba(white, .5);
+    line-height: 1.71;
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: center;
+
+    &-line {
+      display: block;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__inputs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &-item {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__submit {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: $ff-sans;
+    font-size: 16px;
+    line-height: 100%;
+    background-color: $contrast;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($contrast, 10%);
+    }
+
+    &:active {
+      background-color: darken($contrast, 20%);
+    }
+  }
+}

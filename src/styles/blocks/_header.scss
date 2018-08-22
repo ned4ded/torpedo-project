@@ -1,0 +1,22 @@
+.header {
+  min-height: 77px;
+  background-color: rgba(244,244,246, .05);
+  position: relative;
+  z-index: 2;
+  display: flex;
+
+  &__content {
+    height: 100%;
+  }
+
+  &__block {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    &--align--right {
+      align-items: flex-end;
+    }
+  }
+}
