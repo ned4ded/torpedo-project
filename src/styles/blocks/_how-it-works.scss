@@ -8,8 +8,22 @@
 
   background-color: $dark-100;
 
+  @include respond-to(sm) {
+    background-image: radial-gradient(circle at 50% 80%, rgba($dark-100, .7) 5%, rgba($dark-100, 1) 40%), url('../assets/imgs/how-it-works-img.jpg');
+    background-size: 100%, 700px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+
   &__heading {
     margin-top: 9px;
+
+    @include respond-to(sm) {
+      margin-bottom: 60px;
+      margin-top: 0;
+      padding-left: 47px;
+    }
   }
 
   & .ordered-list__counter:before {
@@ -17,6 +31,10 @@
     top: -7px;
 
     background-color: #3c434d;
+
+    @include respond-to(sm) {
+      left: -23px;
+    }
   }
 
   &__img {
@@ -29,6 +47,10 @@
 
     background-image: url('../assets/imgs/how-it-works-img.jpg');
     background-size: 705px 579px;
+
+    @include respond-to(sm) {
+      display: none;
+    }
   }
 
   &__list {
@@ -39,6 +61,10 @@
     list-style: none;
 
     &-item {
+      @include respond-to(sm) {
+        padding-left: 40px;
+      }
+
       &:not(:last-of-type) {
         margin-bottom: 50px;
       }

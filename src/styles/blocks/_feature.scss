@@ -7,6 +7,13 @@
   text-align: center;
   height: 100%;
 
+  @include respond-to(lg) {
+    display: block;
+
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   &__heading {
     font-family: $ff-sans;
     display: block;
@@ -22,6 +29,10 @@
     color: $dark-100;
     font-size: 16px;
     line-height: 1.88;
+
+    @include respond-to(lg) {
+      display: inline;
+    }
   }
 
   &__icon {

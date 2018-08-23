@@ -4,6 +4,10 @@
   background-color: #f1f6f9;
   position: relative;
 
+  @include respond-to(lg) {
+    padding-bottom: 125px;
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -30,9 +34,23 @@
     justify-content: space-between;
     align-items: stretch;
 
+    @include respond-to(lg) {
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
     & li {
       background-color: #fff;
       width: 31.666%;
+
+      @include respond-to(lg) {
+        width: 45%;
+        margin: 10px;
+      }
+
+      @include respond-to(sm) {
+        width: 75%;
+      }
     }
   }
 }

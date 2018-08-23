@@ -7,6 +7,11 @@
 
   background-color: $dark-100;
 
+  @include respond-to(lg) {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
   &:before {
     position: absolute;
     z-index: -1;
@@ -25,6 +30,11 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 1440px;
+
+    @include respond-to(md) {
+      background-size: cover;
+      background-position: 60% 100%;
+    }
   }
 
   &__lang-switch .lang-switch {
@@ -44,10 +54,21 @@
     padding-left: 97px;
     padding-top: 22px;
 
+    @include respond-to(md) {
+      padding-left: 0;
+      padding-top: 0;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
     &-line {
       display: block;
       font-size: 16px;
       line-height: 36px;
+
+      @include respond-to(md) {
+        display: inline;
+      }
     }
 
     &-icon {
@@ -59,6 +80,11 @@
       background-repeat: no-repeat;
       background-size: auto;
       margin-bottom: 25px;
+
+      @include respond-to(md) {
+        margin-right: auto;
+        margin-left: auto;
+      }
     }
   }
 
@@ -69,6 +95,10 @@
     justify-content: space-between;
 
     margin-top: 103px;
+
+    @include respond-to(sm) {
+      margin-top: 50px;
+    }
   }
 
   &__copyright {

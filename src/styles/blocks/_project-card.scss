@@ -12,6 +12,15 @@
   background-color: white;
   box-shadow: 0 0 10.7px 5.3px rgba(208, 215, 222, 0.19);
 
+  @include respond-to(md) {
+    margin: 10px 0;
+  }
+
+  @include respond-to(xs) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &__img-container {
     display: flex;
     align-items: center;

@@ -3,12 +3,26 @@
   &__row {
     &--one {
       min-height: 260px;
+
+      @include respond-to(md) {
+        min-height: 0;
+        margin-bottom: 25px;
+      }
     }
   }
 
   & .ordered-list__counter:before {
     top: 16px;
     left: 29px;
+
+    @include respond-to(lg) {
+      top: 26px;
+    }
+
+    @include respond-to(xs) {
+      top: 16px;
+      left: calc(50% - 122px);
+    }
   }
 
   &__paragraph {
@@ -20,5 +34,13 @@
     font-size: 34px;
     font-weight: bold;
     line-height: 1.41;
+
+    @include respond-to(md) {
+      max-width: 100%;
+    }
+
+    @include respond-to(xs) {
+      text-align: center;
+    }
   }
 }

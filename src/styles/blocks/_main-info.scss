@@ -9,8 +9,16 @@
   background-position: 0 0;
   background-size: 401px 27px;
 
+  @include respond-to(md) {
+    padding-bottom: 100px;
+  }
+
   &__form {
     margin-top: -220px;
     margin-bottom: 113px;
+
+    @include respond-to(md) {
+      margin-top: 0;
+    }
   }
 }
