@@ -111,6 +111,7 @@
       cbsBefore.length ? cbsBefore.forEach(cb => cb(...args)) : null;
 
       const getCallbacksAfter = () => this.callbacks.afterRequest;
+      const getCallbacksFail = () => this.callbacks.failRequest;
 
       req.addEventListener("load", function(...args) {
         const cbs = getCallbacksAfter();
@@ -118,6 +119,15 @@
         cbs.length ? cbs.forEach(cb => cb.bind(this)(...args)) : null;
 
         submits.forEach(s => s.set('success'));
+
+        return;
+      });
+
+      req.addEventListener("error", (...args) => {
+
+        submits.forEach(s => s.set('fail'));
+
+        this.sended = false;
 
         return;
       });
@@ -188,8 +198,12 @@
     submit.instance.classList.add("form__submit--pending");
   }));
 
+  submits.forEach(s => s.on('fail', (submit) => {
+    submit.instance.classList.remove("form__submit--pending");
+  }));
+
   reg.on('afterRequest', function() {
-    
+
   })
 
 })()
