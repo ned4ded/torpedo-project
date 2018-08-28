@@ -29,11 +29,11 @@
         <div class="col-3 header__block header__block--align--right">
           <ul class="lang-switch header__lang-switch">
             <li class="lang-switch__item">
-              <a href="index.html" class="lang-switch__link lang-switch__link--active">Ru</a>
+              <a href="index.html" class="lang-switch__link{{ ' lang-switch__link--active' if lang == 'ru'}}">Ru</a>
             </li>
 
             <li class="lang-switch__item">
-              <a href="en.index.html" class="lang-switch__link">Eng</a>
+              <a href="en.index.html" class="lang-switch__link{{ ' lang-switch__link--active' if lang == 'en'}}">Eng</a>
             </li>
           </ul>
         </div>
@@ -273,7 +273,7 @@
                 <span class="feature__line">{{ features_list_item_3_line_1 }} </span>
                 <span class="feature__line">{{ features_list_item_3_line_2 }} </span>
                 <span class="feature__line">{{ features_list_item_3_line_3 }} </span>
-                <span class="feature__line">{{ features_list_item_3_line_3 }}</span>
+                <span class="feature__line">{{ features_list_item_3_line_4 }}</span>
               </p>
             </li>
           </ul>
@@ -339,11 +339,11 @@
         <div class="col-12 footer__block order-3">
           <ul class="lang-switch footer__lang-switch">
             <li class="lang-switch__item">
-              <a href="index.html" class="lang-switch__link lang-switch__link--active">Ru</a>
+              <a href="index.html" class="lang-switch__link{{ ' lang-switch__link--active' if lang == 'ru'}}">Ru</a>
             </li>
 
             <li class="lang-switch__item">
-              <a href="en.index.html" class="lang-switch__link">Eng</a>
+              <a href="en.index.html" class="lang-switch__link{{ ' lang-switch__link--active' if lang == 'en'}}">Eng</a>
             </li>
           </ul>
         </div>
