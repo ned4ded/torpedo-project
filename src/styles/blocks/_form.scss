@@ -61,6 +61,7 @@
     background-color: $contrast;
     border: none;
     cursor: pointer;
+    background-position: 0;
 
     &:hover {
       background-color: darken($contrast, 10%);
@@ -68,6 +69,38 @@
 
     &:active {
       background-color: darken($contrast, 20%);
+    }
+
+    @keyframes pending {
+      0% {
+        background-position: -29px;
+      }
+
+      100% {
+        background-position: 0;
+      }
+    }
+
+    &--pending {
+      background-image: repeating-linear-gradient(45deg, darken($contrast, 20%), darken($contrast, 20%) 10px, darken($contrast, 10%) 10px, darken($contrast, 10%) 20px);
+      background-position: 0;
+      background-size: 200%;
+      animation-name: pending;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+    }
+
+    &--disabled {
+      background-color: rgb(135, 149, 153);
+      opacity: .6;
+
+      &:hover {
+        background-color: rgb(135, 149, 153);
+        color: white;
+        cursor: not-allowed;
+      }
     }
   }
 }

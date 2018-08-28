@@ -164,11 +164,45 @@ body {
     line-height: 100%;
     background-color: #f6a760;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    background-position: 0; }
     .form__submit:hover {
       background-color: #f38c30; }
     .form__submit:active {
       background-color: #e3720d; }
+
+@-webkit-keyframes pending {
+  0% {
+    background-position: -29px; }
+  100% {
+    background-position: 0; } }
+
+@keyframes pending {
+  0% {
+    background-position: -29px; }
+  100% {
+    background-position: 0; } }
+    .form__submit--pending {
+      background-image: repeating-linear-gradient(45deg, #e3720d, #e3720d 10px, #f38c30 10px, #f38c30 20px);
+      background-position: 0;
+      background-size: 200%;
+      -webkit-animation-name: pending;
+              animation-name: pending;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+              animation-timing-function: linear;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .form__submit--disabled {
+      background-color: #879599;
+      opacity: .6; }
+      .form__submit--disabled:hover {
+        background-color: #879599;
+        color: white;
+        cursor: not-allowed; }
 
 .ordered-list {
   margin-top: 0;

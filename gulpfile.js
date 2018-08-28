@@ -6,10 +6,11 @@ const browserSync = require('browser-sync').create();
 
 const styles = require('./tasks/styles');
 
-const html = require('./tasks/html')(browserSync);
+const scripts = require('./tasks/scripts')(browserSync);
+const render = require('./tasks/render')(browserSync);
 const sprite = require('./tasks/svgSprite');
 
-gulp.task('webserver', ['styles', 'html'], function() {
+gulp.task('webserver', ['styles', 'render', 'scripts'], function() {
   browserSync.init({
     open: false,
     ui: false,
@@ -23,7 +24,9 @@ gulp.task('webserver', ['styles', 'html'], function() {
   });
 
   gulp.watch(config.paths.stylesAll, ['styles']);
-  gulp.watch(config.paths.pages, ['html']);
+  gulp.watch(config.paths.scripts, ['scripts']);
+  gulp.watch(config.paths.pages, ['render']);
+  gulp.watch('src/pages/locals/*.json', ['render']);
 });
 
 gulp.task('default', ['webserver']);
